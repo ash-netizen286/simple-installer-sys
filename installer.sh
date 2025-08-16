@@ -1,6 +1,6 @@
 pacman -Syu --noconfirm
 
-pacman -S --noconfirm wget curl
+pacman -S --noconfirm i3-wm
 pacman -S --noconfirm rofi
 pacman -S --noconfirm firefox
 pacman -S --noconfirm alacritty
