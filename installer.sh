@@ -1,22 +1,10 @@
-pacman -Syu --noconfirm
+if [ "$EUID" -ne 0 ]; then
+  echo "Root can't run this script"
+  exit 1
+fi
 
-pacman -S --noconfirm i3-wm
-pacman -S --noconfirm rofi
-pacman -S --noconfirm firefox
-pacman -S --noconfirm alacritty
-
-pacman -S --needed --noconfirm git base-devel
-
-pacman -S --noconfirm networkmanager
-systemctl enable NetworkManager
-
-pacman -S --noconfirm conky
-pacman -S --noconfirm polybar
-pacman -S --noconfirm feh
-pacman -S --noconfirm ranger
-pacman -S --noconfirm pulseaudio pvaucontrol
-pacman -S --noconfirm xorg xorg-xinit xorg-apps
-pacman -S --noconfirm nvidia nvidia-utils nvidia-settings
-
-pacman -S --noconfirm lightdm lightdm-gtk-greeter
-systemctl enable lightdm
+bash ./pacman_installer.sh
+bash ./yay_installer.sh
+bash ./autorun_installer.sh
+bash ./wallper_installer.sh
+bash ./zsh_install.sh
