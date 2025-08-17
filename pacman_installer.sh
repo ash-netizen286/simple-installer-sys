@@ -14,7 +14,6 @@ pacman -S --noconfirm networkmanager --needed
 systemctl enable NetworkManager
 
 pacman -S --noconfirm conky --needed
-pacman -S --noconfirm polybar --needed
 pacman -S --noconfirm feh --needed
 pacman -S --noconfirm ranger --needed
 pacman -S --noconfirm pulseaudio pvaucontrol --needed
