@@ -5,6 +5,8 @@ pacman -S --noconfirm git --needed
 
 sudo -u "$SUDO_USER" bash << EOF
 
+mkdir -p ~/.config
+
 rm -rf ~/.config/nvim
 rm -rf ~/.config/i3
 rm -rf ~/.config/conky

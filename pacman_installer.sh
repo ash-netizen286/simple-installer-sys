@@ -6,7 +6,6 @@ pacman -Syu --noconfirm
 pacman -S --noconfirm i3-wm --needed
 pacman -S --noconfirm rofi --needed
 pacman -S --noconfirm firefox --needed
-pacman -S --noconfirm alacritty --needed
 
 pacman -S --noconfirm git base-devel --needed
 
