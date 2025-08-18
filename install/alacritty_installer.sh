@@ -1,6 +1,4 @@
 #!/bin/bash
-set -e
-
 pacman -S --noconfirm alacritty --needed
 
 sudo -u "$SUDO_USER" bash <<EOF

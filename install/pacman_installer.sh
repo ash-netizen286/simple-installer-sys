@@ -1,6 +1,4 @@
 #!/bin/bash
-set -e
-
 pacman -Syu --noconfirm
 
 pacman -S --noconfirm i3-wm --needed
@@ -28,3 +26,4 @@ pacman -S --noconfirm picom --needed
 pacman -S --noconfirm curl --needed
 pacman -S --noconfirm jr --needed
 pacman -S --noconfirm openssh --needed
+pacman -S --noconfirm xclip --needed

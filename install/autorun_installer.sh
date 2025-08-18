@@ -1,6 +1,4 @@
 #!/bin/bash
-set -e
-
 sudo -u "$SUDO_USER" bash <<EOF
 cd ~/
 mkdir Autorun

@@ -1,6 +1,4 @@
 #!/bin/bash
-set -e
-
 if [ "$EUID" -ne 0 ]; then
   echo "Root can't run this script"
   exit 1

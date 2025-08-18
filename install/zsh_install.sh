@@ -1,6 +1,4 @@
 #!/bin/bash
-set -e
-
 pacman -S --noconfirm zsh git curl --needed
 
 sudo -u "$SUDO_USER" sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended

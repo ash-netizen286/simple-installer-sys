@@ -1,6 +1,4 @@
 #!/bin/bash
-set -e
-
 pacman -S --noconfirm git --needed
 
 sudo -u "$SUDO_USER" bash << EOF
