@@ -6,12 +6,13 @@ if [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 
+pacman -S --needed --noconfirm git base-devel
+sudo -u "$SUDO_USER" bash <<EOF
 echo "Install dependens..."
-sudo pacman -S --needed --noconfirm git base-devel
 
 echo "Copy yay repo..."
 if [ -d "$HOME/yay" ]; then
-  echo "Die ~/yay already excist, pass clone."
+  echo "Dir ~/yay already excist, pass clone."
 else
   git clone https://aur.archlinux.org/yay.git ~/yay
 fi
@@ -19,13 +20,14 @@ fi
 cd ~/yay
 
 echo "Build and install yay..."
-sudo -u "$SUDO_USER" makepkg -si --noconfirm
+makepkg -si --noconfirm
 
 cd ..
 rm -rf ~/yay
 
 echo "Install successed!"
 
-sudo -u "$SUDO_USER" yay -S --noconfirm 64gram-desktop-bin
-sudo -u "$SUDO_USER" yay -S --noconfirm obsidian
-sudo -u "$SUDO_USER" yay -S --noconfirm bat
+yay -S --noconfirm 64gram-desktop-bin
+yay -S --noconfirm obsidian
+yay -S --noconfirm bat
+EOF

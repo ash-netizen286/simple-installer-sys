@@ -10,6 +10,6 @@ echo "window:
     opacity: 0.8
 " > ~/.config/alacritty/alacritty.yml
 echo "[window]
-opacity = 0.8" > ~/.config/alacritty/alacritty.yml
+opacity = 0.8" > ~/.config/alacritty/alacritty.toml
 
 EOF

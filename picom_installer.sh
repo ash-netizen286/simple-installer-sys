@@ -80,6 +80,6 @@ corner-radius = 20;
 rounded-corners-exclude = [
   "!class_g = 'Conky'"
 ];
-" >> ~/.config/picom.conf
+" > ~/.config/picom.conf
 
 EOF
