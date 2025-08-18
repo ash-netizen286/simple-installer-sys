@@ -27,3 +27,4 @@ pacman -S --noconfirm trash-cli --needed
 pacman -S --noconfirm picom --needed
 pacman -S --noconfirm curl --needed
 pacman -S --noconfirm jr --needed
+pacman -S --noconfirm openssh --needed
