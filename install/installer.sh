@@ -10,5 +10,6 @@ bash ./zsh_install.sh
 bash ./fonts_installer.sh
 bash ./git_installer.sh
 bash ./alacritty_installer.sh
+bash ./picom_installer.sh
 
 sudo -u "$SUDO_USER" echo "exec i3 -c ~/.config/i3/config" >> ~/.xinitrc

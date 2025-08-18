@@ -27,3 +27,4 @@ pacman -S --noconfirm curl --needed
 pacman -S --noconfirm jr --needed
 pacman -S --noconfirm openssh --needed
 pacman -S --noconfirm xclip --needed
+pacman -S --noconfirm grub efibootmgr os-prober mtools --needed

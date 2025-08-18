@@ -1,8 +1,10 @@
 #!/bin/bash
 pacman -S --noconfirm picom --needed
 
-sudo -u "$SUDO_USER" bash <<EOF
-echo "backend = "glx";
+sudo -u "$SUDO_USER" bash <<'EOF'
+mkdir -p ~/.config
+cat > ~/.config/picom.conf <<'EOC'
+backend = "glx";
 
 glx-no-stencil = true;
 glx-copy-from-front = false;
@@ -78,6 +80,6 @@ corner-radius = 20;
 rounded-corners-exclude = [
   "!class_g = 'Conky'"
 ];
-" > ~/.config/picom.conf
-
+EOC
 EOF
+
